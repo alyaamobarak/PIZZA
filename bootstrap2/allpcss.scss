@@ -1,0 +1,170 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+}
+
+
+html, body {
+  overflow-x: hidden !important;
+  width: 100%;
+  font-family: "Amatic SC", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Colors */
+$nav-color: rgba(0, 0, 0, 0.35);
+$nav-hover-bg: #000;
+$link-hover-bg: #cccccc;
+$link-hover-color: #333;
+
+/* Navbar */
+.navbar {
+  background-color: $nav-color;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: $nav-hover-bg;
+  }
+
+  .navbar-toggler {
+    border: none;
+    &:focus {
+      box-shadow: none;
+    }
+  }
+
+  .nav-link {
+    color: white;
+    &:hover {
+      background-color: $link-hover-bg;
+      color: $link-hover-color;
+    }
+  }
+}
+
+/* Header */
+.header {
+  background-image: url("imgs/imgs1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 650px;
+  filter: grayscale(50%);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h1 {
+    color: white;
+    font-size: 4rem;
+    line-height: 1.6;
+  }
+
+  .para2 {
+    margin: 20px auto;
+    color: white;
+  }
+
+  a {
+    background-color: #000;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    display: inline-block;
+
+    &:hover {
+      background-color: $link-hover-bg;
+      color: $link-hover-color;
+    }
+  }
+
+  .para {
+    background-color: #000;
+    color: white;
+    padding: 10px;
+    margin-top: 30px;
+  }
+}
+
+
+/* Menu Tabs */
+@mixin backcolor {
+  background-color: black;
+  text-align: center;
+}
+
+.nav-pills {
+  @include backcolor;
+  padding: 0;
+  border: 1px solid #ccc;
+  overflow-x: auto;
+  white-space: nowrap;
+
+  .nav-item {
+    @include backcolor;
+
+    .nav-link {
+      color: white;
+
+      &:hover {
+        background-color: red;
+      }
+    }
+  }
+}
+
+/* Tab Content */
+.tab-pane h3 {
+  color: #000;
+}
+
+/* Footer Link Hover */
+.linkw3:hover {
+  color: green !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    width: 95% !important;
+  }
+
+  .navbar-expand-md {
+    flex-wrap: wrap;
+  }
+
+  .nav-pills {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+
+  .nav-pills .nav-link {
+    white-space: nowrap;
+    flex-shrink: 0;
+    padding: 10px 20px;
+  }
+
+  .d-flex {
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+
+  .tab-pane .d-flex {
+    gap: 10px;
+  }
+
+  .img-fluid, img {
+    width: 100% !important;
+    height: auto;
+  }
+
+  .header {
+    height: auto;
+    padding: 80px 20px;
+    h1 {
+      font-size: 2.5rem;
+    }
+  }
+}

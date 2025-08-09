@@ -1,0 +1,84 @@
+body {
+  font-family: "Amatic SC", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* nav */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.35);
+}
+.navbar:hover {
+  background-color: #000;
+}
+
+.navbar-nav .nav-link {
+  color: white;
+}
+.navbar-nav .nav-link:hover {
+  background-color: rgba(204, 204, 204, 0.8);
+  color: #333;
+}
+
+.header {
+  background-image: url(imgs/imgs1.jpg);
+  background-size: cover;
+  height: 650px;
+  width: 100%;
+  position: relative;
+  filter: grayscale(50%);
+  background-repeat: no-repeat;
+}
+.header h1 {
+  padding-top: 140px;
+  color: white;
+  text-align: center;
+  line-height: 1.6;
+}
+.header .para2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.header a {
+  background-color: #000;
+  text-decoration: none;
+  padding: 15px;
+  color: white;
+}
+.header a:hover {
+  background-color: rgba(204, 204, 204, 0.8);
+  color: #333;
+}
+.header .para {
+  display: flex;
+  text-align: left;
+  margin-bottom: -10px;
+  background-color: #000;
+}
+
+.tab-pane div h3 {
+  color: #000;
+}
+
+.nav-pills {
+  background-color: black;
+  text-align: center;
+  padding: 0;
+  border: 1px solid #ccc;
+  height: 60px;
+}
+
+.nav-pills .nav-item {
+  background-color: black;
+  text-align: center;
+}
+
+.nav-pills .nav-item .nav-link:hover {
+  background-color: red;
+}
+
+/* footer */
+.linkw3:hover {
+  color: green !important;
+}/*# sourceMappingURL=allpcss.css.map */
